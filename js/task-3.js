@@ -6,7 +6,6 @@ forbiddenWords = message.toLowerCase().includes(a.toLowerCase()) || message.toLo
 
 return forbiddenWords
 
-
 }
 
 
