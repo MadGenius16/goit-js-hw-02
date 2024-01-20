@@ -1,10 +1,10 @@
-const blackword1= spam
-const blackword2= sale
-let=m1
 function checkForSpam(message){
+let a ='spam';
+let b ='sale';
 
- m1= message.toLowerCase()
- return m1.includes(blackword1.toLowerCase())
+forbiddenWords = message.toLowerCase().includes(a.toLowerCase()) || message.toLowerCase().includes(b.toLowerCase())
+
+return forbiddenWords
 
 
 }
