@@ -2,7 +2,6 @@
 function getShippingCost(country) {
   switch(country) {
   case 'China': price=100
-
   return `Shipping to ${country} will cost ${price} credits`
 
   case 'Chile': price=250
@@ -16,7 +15,6 @@ function getShippingCost(country) {
 
 default:
   return "Sorry, there is no delivery to your country"
-
 }
 }
 
