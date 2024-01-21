@@ -1,10 +1,10 @@
-function checkForSpam(message){
-let spamWord = 'spam';
-let saleWord = 'sale';
-let containsForbiddenWords;
-containsForbiddenWords = message.toLowerCase().includes(spamWord.toLowerCase()) || message.toLowerCase().includes(saleWord.toLowerCase());
-return containsForbiddenWords;
-
+function checkForSpam(message) {
+  let spamWord = 'spam';
+  let saleWord = 'sale';
+  const lowerMessage = message.toLowerCase();
+  let containsForbiddenWords;
+  containsForbiddenWords = lowerMessage.includes(spamWord.toLowerCase()) || lowerMessage.includes(saleWord.toLowerCase());
+  return containsForbiddenWords;
 }
 
 
