@@ -1,12 +1,14 @@
 function checkForSpam(message){
-let a ='spam';
-let b ='sale';
-
-forbiddenWords = message.toLowerCase().includes(a.toLowerCase()) || message.toLowerCase().includes(b.toLowerCase())
-
-return forbiddenWords
+let spamWord = 'spam';
+let saleWord = 'sale';
+let containsForbiddenWords;
+containsForbiddenWords = message.toLowerCase().includes(spamWord.toLowerCase()) || message.toLowerCase().includes(saleWord.toLowerCase());
+return containsForbiddenWords;
 
 }
+
+
+
 
 
 
@@ -20,9 +22,3 @@ console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 
 
-
-// toLowerCase()
-
-// const username = 'Jacob Mercer';
-
-// console.log(username.includes('Jacob')); // true
